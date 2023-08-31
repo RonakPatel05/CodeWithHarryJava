@@ -1,31 +1,42 @@
 import javax.lang.model.element.Name;
 
-class employ{
+class employ {
     private int id;
-    private String name;
+    private String Name;
 
-    public void getname(String n){
-        name=n;
+    public String getName() {
+        return Name;
     }
 
-    public void setname(String n){
-        name=n;
+    public void setName(String n) {
+        Name = n;
     }
 
-
-    public void setname(String n){
-        name=n;
+    public void setid(int i) {
+        id = i;
     }
-    public int getid(){
+
+    public int getid() {
         return id;
     }
+
+    public void setid(String string) {
+    }
+
+    // public char[] getName() {
+    //     return null;
+    // }
 
 }
 
 public class modifiers {
     public static void main(String[] args) {
-        employee rb=new employee();
-        rb.id=43;
-        rb.name="ronakpatel";
+        employ rb = new employ();
+        // rb.id=43;
+        // rb.name="ronakpatel"; -->throws error bdue to private modifier
+        rb.setName("ronakpatel");
+        System.out.println(rb.getName());
+        rb.setid(143);
+        System.out.println(rb.getid());
     }
 }

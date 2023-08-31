@@ -12,6 +12,16 @@ class employee{
     public int getsalary(){
         return salary;
     }
+    public void setName(String string) {
+    }
+    public char[] getName() {
+        return null;
+    }
+    public char[] getid() {
+        return null;
+    }
+    public void setid(String string) {
+    }
 }
 
 public class oopinjava {
